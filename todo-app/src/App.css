@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: 1px solid #228bec;
+	outline-offset: 0;
+}
+
+html {
+	font: 62.5% / 1.15 sans-serif;
+}
+
+h1,
+h2 {
+	margin-bottom: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+	appearance: none;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+form > input {
+  text-align: center;
+}
+input[type="text"] {
+	border-radius: 0;
+}
+
+body {
+	width: 100%;
+	max-width: 68rem;
+	margin: 0 auto;
+	font: 1.6rem/1.25 Arial, sans-serif;
+	background-color: #f5f5f5;
+	color: #4d4d4d;
+}
+
+@media screen and (min-width: 620px) {
+	body {
+		font-size: 1.9rem;
+		line-height: 1.31579;
+	}
+}
+
+.todoapp {
+  background: #fff;
+  margin: 2rem 0 4rem 0;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.todoapp>h1 {
+	text-align: center;
+}
+
+.todoapp>form {
+	display: flex;
+	flex-direction: column;
+}
+
+form>input {
+	margin-bottom: 25px !important;
+}
+
+.todoapp>h2 {
+	text-align: center;
+}
+
+.c-cb {
+	text-align: center;
+}
+
+.form-group>input[type="text"] {
+	display: inline-block;
+	margin-top: 0.4rem;
+}
+
+.btn {
+	padding: 0.8rem 1rem 0.7rem;
+	border: 0.2rem solid #4d4d4d;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.btn.toggle-btn {
+	border-width: 1px;
+	border-color: #d3d3d3;
+}
+
+.btn.toggle-btn[aria-pressed="true"] {
+	text-decoration: underline;
+	border-color: #4d4d4d;
+}
+
+.btn__danger {
+	color: #fff;
+	background-color: #ca3c3c;
+	border-color: #bd2130;
+}
+
+.btn__filter {
+	border-color: lightgrey;
+}
+
+.btn__primary {
+	color: #fff;
+	background-color: #61db90;
+  border: 2px solid #5aaf7b;
+}
+
+/* CHECKBOX STYLES */
+input[type="checkbox"] {
+  outline: 1px solid black;
+  height: 10px;
+  width: 10px;
+  transition: border-color 0.2s ease-in-out; /* add a transition effect */
+  transform: scale(2); /* increase the size of the checkbox */
+  vertical-align: middle; /* align the checkbox to the vertical center of the label */
+}
+
+.todo-label {
+  margin-left: 14px;
+  align-items: center; /* vertically center the content */
+}
+/* CHECKBOX STYLES */
+
+.btn-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-group>* {
+	flex: 1 1 49%;
+}
+
+.btn-group>*+* {
+	margin-left: 0.8rem;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+[class*="stack"]>* {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.stack-small>*+* {
+	margin-top: 1.25rem;
+}
+
+.todoapp>*+* {
+	margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 550px) {
+	.stack-small>*+* {
+		margin-top: 1.4rem;
+	}
+
+	.todoapp>*+* {
+		margin-top: 2.8rem;
+	}
+}
+
+.stack-exception {
+	margin-top: 1.2rem;
+}
+
+input {
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 6px!important;
+}
+
+.edit {
+  border: 2px dashed rgb(87, 87, 170);
+  box-shadow: 0 2px 4px 0 rgb(87, 87, 170), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+
+  padding: 8px;
+}
